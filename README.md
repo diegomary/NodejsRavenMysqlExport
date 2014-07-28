@@ -1,7 +1,7 @@
 NodejsRavenMysqlExport
 ======================
 
-A nodejs basic server that reads data from Mysql end export them to RavenDB.
+A nodejs basic server that reads data from Mysql end exports them to RavenDB.
 
 This sample requires RavenDB be installed and running as a service or as a console application. The address configured is:
 http://localhost:777.
