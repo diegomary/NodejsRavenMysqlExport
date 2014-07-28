@@ -2,7 +2,7 @@
 (function DMSERVER () {
     var http = require('http');
     var util = require('util');
-    var express = require('express');  // express is installed as a module with the following command line:   npm install express
+    var express = require('express');  // express is installed but not used in this sample as a module with the following command line:   npm install express 
     var mysql = require('mysql');
     var extend = require('util')._extend;
     var $ = require('jquery'); // npm install jquery
