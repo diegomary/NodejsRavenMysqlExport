@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E877D21-616D-46D1-8A45-57588371F7AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="node_modules\express\.npmignore" />
+    <Content Include="node_modules\express\History.md" />
+    <Content Include="node_modules\express\LICENSE" />
+    <Content Include="node_modules\express\node_modules\accepts\.npmignore" />
+    <Content Include="node_modules\express\node_modules\accepts\History.md" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\.npmignore" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\.travis.yml" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\component.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\lib\custom.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\lib\mime.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\lib\node.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\LICENSE" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\Makefile" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\package.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\README.md" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\SOURCES.md" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\.npmignore" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\LICENSE" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\package.json" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\readme.md" />
+    <Content Include="node_modules\express\node_modules\accepts\package.json" />
+    <Content Include="node_modules\express\node_modules\accepts\README.md" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\.npmignore" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\.travis.yml" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\LICENSE" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\package.json" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\README.md" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\.npmignore" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\History.md" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\Makefile" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\package.json" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\Readme.md" />
+    <Content Include="node_modules\express\node_modules\cookie\.npmignore" />
+    <Content Include="node_modules\express\node_modules\cookie\LICENSE" />
+    <Content Include="node_modules\express\node_modules\cookie\package.json" />
+    <Content Include="node_modules\express\node_modules\cookie\README.md" />
+    <Content Include="node_modules\express\node_modules\debug\.jshintrc" />
+    <Content Include="node_modules\express\node_modules\debug\.npmignore" />
+    <Content Include="node_modules\express\node_modules\debug\component.json" />
+    <Content Include="node_modules\express\node_modules\debug\History.md" />
+    <Content Include="node_modules\express\node_modules\debug\Makefile" />
+    <Content Include="node_modules\express\node_modules\debug\node_modules\ms\.npmignore" />
+    <Content Include="node_modules\express\node_modules\debug\node_modules\ms\package.json" />
+    <Content Include="node_modules\express\node_modules\debug\node_modules\ms\README.md" />
+    <Content Include="node_modules\express\node_modules\debug\package.json" />
+    <Content Include="node_modules\express\node_modules\debug\Readme.md" />
+    <Content Include="node_modules\express\node_modules\depd\.npmignore" />
+    <Content Include="node_modules\express\node_modules\depd\History.md" />
+    <Content Include="node_modules\express\node_modules\depd\LICENSE" />
+    <Content Include="node_modules\express\node_modules\depd\package.json" />
+    <Content Include="node_modules\express\node_modules\depd\Readme.md" />
+    <Content Include="node_modules\express\node_modules\escape-html\.npmignore" />
+    <Content Include="node_modules\express\node_modules\escape-html\component.json" />
+    <Content Include="node_modules\express\node_modules\escape-html\Makefile" />
+    <Content Include="node_modules\express\node_modules\escape-html\package.json" />
+    <Content Include="node_modules\express\node_modules\escape-html\Readme.md" />
+    <Content Include="node_modules\express\node_modules\finalhandler\.npmignore" />
+    <Content Include="node_modules\express\node_modules\finalhandler\HISTORY.md" />
+    <Content Include="node_modules\express\node_modules\finalhandler\package.json" />
+    <Content Include="node_modules\express\node_modules\finalhandler\README.md" />
+    <Content Include="node_modules\express\node_modules\fresh\.npmignore" />
+    <Content Include="node_modules\express\node_modules\fresh\History.md" />
+    <Content Include="node_modules\express\node_modules\fresh\Makefile" />
+    <Content Include="node_modules\express\node_modules\fresh\package.json" />
+    <Content Include="node_modules\express\node_modules\fresh\Readme.md" />
+    <Content Include="node_modules\express\node_modules\media-typer\.npmignore" />
+    <Content Include="node_modules\express\node_modules\media-typer\HISTORY.md" />
+    <Content Include="node_modules\express\node_modules\media-typer\package.json" />
+    <Content Include="node_modules\express\node_modules\media-typer\README.md" />
+    <Content Include="node_modules\express\node_modules\merge-descriptors\.npmignore" />
+    <Content Include="node_modules\express\node_modules\merge-descriptors\component.json" />
+    <Content Include="node_modules\express\node_modules\merge-descriptors\package.json" />
+    <Content Include="node_modules\express\node_modules\merge-descriptors\README.md" />
+    <Content Include="node_modules\express\node_modules\methods\.npmignore" />
+    <Content Include="node_modules\express\node_modules\methods\History.md" />
+    <Content Include="node_modules\express\node_modules\methods\LICENSE" />
+    <Content Include="node_modules\express\node_modules\methods\package.json" />
+    <Content Include="node_modules\express\node_modules\methods\Readme.md" />
+    <Content Include="node_modules\express\node_modules\parseurl\.npmignore" />
+    <Content Include="node_modules\express\node_modules\parseurl\HISTORY.md" />
+    <Content Include="node_modules\express\node_modules\parseurl\LICENSE" />
+    <Content Include="node_modules\express\node_modules\parseurl\package.json" />
+    <Content Include="node_modules\express\node_modules\parseurl\README.md" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\.npmignore" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\component.json" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\History.md" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\package.json" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\Readme.md" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\.npmignore" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\History.md" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\LICENSE" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.npmignore" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\Cakefile" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\LICENSE" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\package.json" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\README.md" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\src\ipaddr.coffee" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\test\ipaddr.test.coffee" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\package.json" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\README.md" />
+    <Content Include="node_modules\express\node_modules\qs\.gitmodules" />
+    <Content Include="node_modules\express\node_modules\qs\.npmignore" />
+    <Content Include="node_modules\express\node_modules\qs\package.json" />
+    <Content Include="node_modules\express\node_modules\qs\Readme.md" />
+    <Content Include="node_modules\express\node_modules\range-parser\.npmignore" />
+    <Content Include="node_modules\express\node_modules\range-parser\History.md" />
+    <Content Include="node_modules\express\node_modules\range-parser\Makefile" />
+    <Content Include="node_modules\express\node_modules\range-parser\package.json" />
+    <Content Include="node_modules\express\node_modules\range-parser\Readme.md" />
+    <Content Include="node_modules\express\node_modules\send\.npmignore" />
+    <Content Include="node_modules\express\node_modules\send\History.md" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\.npmignore" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\HISTORY.md" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\.npmignore" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\LICENSE" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\package.json" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\README.md" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\package.json" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\README.md" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\LICENSE" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\package.json" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\README.md" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\types\mime.types" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\types\node.types" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\ms\.npmignore" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\ms\package.json" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\ms\README.md" />
+    <Content Include="node_modules\express\node_modules\send\package.json" />
+    <Content Include="node_modules\express\node_modules\send\Readme.md" />
+    <Content Include="node_modules\express\node_modules\serve-static\.npmignore" />
+    <Content Include="node_modules\express\node_modules\serve-static\History.md" />
+    <Content Include="node_modules\express\node_modules\serve-static\LICENSE" />
+    <Content Include="node_modules\express\node_modules\serve-static\package.json" />
+    <Content Include="node_modules\express\node_modules\serve-static\Readme.md" />
+    <Content Include="node_modules\express\node_modules\type-is\.npmignore" />
+    <Content Include="node_modules\express\node_modules\type-is\HISTORY.md" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\.npmignore" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\.travis.yml" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\component.json" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\lib\custom.json" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\lib\mime.json" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\lib\node.json" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\LICENSE" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\Makefile" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\package.json" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\README.md" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\SOURCES.md" />
+    <Content Include="node_modules\express\node_modules\type-is\package.json" />
+    <Content Include="node_modules\express\node_modules\type-is\README.md" />
+    <Content Include="node_modules\express\node_modules\utils-merge\.travis.yml" />
+    <Content Include="node_modules\express\node_modules\utils-merge\LICENSE" />
+    <Content Include="node_modules\express\node_modules\utils-merge\package.json" />
+    <Content Include="node_modules\express\node_modules\utils-merge\README.md" />
+    <Content Include="node_modules\express\node_modules\vary\.npmignore" />
+    <Content Include="node_modules\express\node_modules\vary\History.md" />
+    <Content Include="node_modules\express\node_modules\vary\LICENSE" />
+    <Content Include="node_modules\express\node_modules\vary\package.json" />
+    <Content Include="node_modules\express\node_modules\vary\README.md" />
+    <Content Include="node_modules\express\package.json" />
+    <Content Include="node_modules\express\Readme.md" />
+    <Content Include="node_modules\jquery\.bowerrc" />
+    <Content Include="node_modules\jquery\.jscsrc" />
+    <Content Include="node_modules\jquery\.npmignore" />
+    <Content Include="node_modules\jquery\bower.json" />
+    <Content Include="node_modules\jquery\CONTRIBUTING.md" />
+    <Content Include="node_modules\jquery\dist\cdn\jquery-2.1.1.min.map" />
+    <Content Include="node_modules\jquery\dist\jquery.min.map" />
+    <Content Include="node_modules\jquery\package.json" />
+    <Content Include="node_modules\jquery\README.md" />
+    <Content Include="node_modules\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="node_modules\mysql\.npmignore" />
+    <Content Include="node_modules\mysql\Changes.md" />
+    <Content Include="node_modules\mysql\fixtures\ssl-profiles.json" />
+    <Content Include="node_modules\mysql\License" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\.npmignore" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\.travis.yml" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\LICENCE" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\package.json" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\README.md" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\.npmignore" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\float.patch" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\LICENSE" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\float.patch" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\package.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\README.md" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\package.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\README.md" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\isarray\component.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\isarray\package.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\isarray\README.md" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\string_decoder\.npmignore" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\string_decoder\LICENSE" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\string_decoder\package.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\string_decoder\README.md" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\package.json" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\README.md" />
+    <Content Include="node_modules\mysql\node_modules\require-all\.npmignore" />
+    <Content Include="node_modules\mysql\node_modules\require-all\License" />
+    <Content Include="node_modules\mysql\node_modules\require-all\package.json" />
+    <Content Include="node_modules\mysql\node_modules\require-all\Readme.md" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\mydir\sub\config.json" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\mydir\sub\no.2js" />
+    <Content Include="node_modules\mysql\package.json" />
+    <Content Include="node_modules\mysql\Readme.md" />
+    <Content Include="node_modules\ravendb\.npmignore" />
+    <Content Include="node_modules\ravendb\Cakefile" />
+    <Content Include="node_modules\ravendb\MIT-LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\.bin\testino" />
+    <Content Include="node_modules\ravendb\node_modules\.bin\testino.cmd" />
+    <Content Include="node_modules\ravendb\node_modules\request\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\request\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\request\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\testino\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\HISTORY.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\.travis.yml" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\component.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\Gemfile" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\Gemfile.lock" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\libpeerconnection.log" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\Rakefile" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\README.markdown" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\.travis.yml" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\CONTRIBUTORS" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\once\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\once\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\once\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\bash-results.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\testino\README.md" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\.npmignore" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\.travis.yml" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\CNAME" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\CONTRIBUTING.md" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\LICENSE" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\package.json" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\README.md" />
+    <Content Include="node_modules\ravendb\package.json" />
+    <Content Include="node_modules\ravendb\README.md" />
+    <Content Include="node_modules\ravendb\src\api.coffee" />
+    <Content Include="node_modules\ravendb\src\database.coffee" />
+    <Content Include="node_modules\ravendb\src\datastore.coffee" />
+    <Content Include="node_modules\ravendb\src\document.coffee" />
+    <Content Include="node_modules\ravendb\src\ravendb.coffee" />
+    <Content Include="node_modules\ravendb\src\tests\database-test.coffee" />
+    <Content Include="node_modules\ravendb\src\tests\datastore-test.coffee" />
+    <Content Include="node_modules\ravendb\src\tests\document-test.coffee" />
+    <Content Include="node_modules\ravendb\src\tests\helpers.coffee" />
+    <Content Include="packages\jQuery.2.1.1\Content\Scripts\jquery-2.1.1.min.map" />
+    <Content Include="packages\jQuery.2.1.1\jQuery.2.1.1.nupkg" />
+    <Content Include="packages\jQuery.2.1.1\Tools\common.ps1" />
+    <Content Include="packages\jQuery.2.1.1\Tools\install.ps1" />
+    <Content Include="packages\jQuery.2.1.1\Tools\uninstall.ps1" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.html" />
+    <Content Include="node_modules\express\index.js" />
+    <Content Include="node_modules\express\lib\application.js" />
+    <Content Include="node_modules\express\lib\express.js" />
+    <Content Include="node_modules\express\lib\middleware\init.js" />
+    <Content Include="node_modules\express\lib\middleware\query.js" />
+    <Content Include="node_modules\express\lib\request.js" />
+    <Content Include="node_modules\express\lib\response.js" />
+    <Content Include="node_modules\express\lib\router\index.js" />
+    <Content Include="node_modules\express\lib\router\layer.js" />
+    <Content Include="node_modules\express\lib\router\match.js" />
+    <Content Include="node_modules\express\lib\router\route.js" />
+    <Content Include="node_modules\express\lib\utils.js" />
+    <Content Include="node_modules\express\lib\view.js" />
+    <Content Include="node_modules\express\node_modules\accepts\index.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\mime-types\lib\index.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\lib\charset.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\lib\encoding.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\lib\language.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\lib\mediaType.js" />
+    <Content Include="node_modules\express\node_modules\accepts\node_modules\negotiator\lib\negotiator.js" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\index.js" />
+    <Content Include="node_modules\express\node_modules\buffer-crc32\tests\crc.test.js" />
+    <Content Include="node_modules\express\node_modules\cookie-signature\index.js" />
+    <Content Include="node_modules\express\node_modules\cookie\index.js" />
+    <Content Include="node_modules\express\node_modules\debug\browser.js" />
+    <Content Include="node_modules\express\node_modules\debug\debug.js" />
+    <Content Include="node_modules\express\node_modules\debug\node.js" />
+    <Content Include="node_modules\express\node_modules\debug\node_modules\ms\index.js" />
+    <Content Include="node_modules\express\node_modules\depd\index.js" />
+    <Content Include="node_modules\express\node_modules\escape-html\index.js" />
+    <Content Include="node_modules\express\node_modules\finalhandler\index.js" />
+    <Content Include="node_modules\express\node_modules\fresh\index.js" />
+    <Content Include="node_modules\express\node_modules\media-typer\index.js" />
+    <Content Include="node_modules\express\node_modules\merge-descriptors\index.js" />
+    <Content Include="node_modules\express\node_modules\methods\index.js" />
+    <Content Include="node_modules\express\node_modules\methods\test\methods.js" />
+    <Content Include="node_modules\express\node_modules\parseurl\index.js" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\index.js" />
+    <Content Include="node_modules\express\node_modules\path-to-regexp\test.js" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\index.js" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\ipaddr.min.js" />
+    <Content Include="node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\lib\ipaddr.js" />
+    <Content Include="node_modules\express\node_modules\qs\index.js" />
+    <Content Include="node_modules\express\node_modules\range-parser\index.js" />
+    <Content Include="node_modules\express\node_modules\send\index.js" />
+    <Content Include="node_modules\express\node_modules\send\lib\send.js" />
+    <Content Include="node_modules\express\node_modules\send\lib\utils.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\index.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\index.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\finished\node_modules\ee-first\test.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\mime.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\mime\test.js" />
+    <Content Include="node_modules\express\node_modules\send\node_modules\ms\index.js" />
+    <Content Include="node_modules\express\node_modules\serve-static\index.js" />
+    <Content Include="node_modules\express\node_modules\type-is\index.js" />
+    <Content Include="node_modules\express\node_modules\type-is\node_modules\mime-types\lib\index.js" />
+    <Content Include="node_modules\express\node_modules\utils-merge\index.js" />
+    <Content Include="node_modules\express\node_modules\vary\index.js" />
+    <Content Include="node_modules\express\test.js" />
+    <Content Include="node_modules\jquery\AUTHORS.txt" />
+    <Content Include="node_modules\jquery\dist\cdn\jquery-2.1.1.js" />
+    <Content Include="node_modules\jquery\dist\cdn\jquery-2.1.1.min.js" />
+    <Content Include="node_modules\jquery\dist\jquery.js" />
+    <Content Include="node_modules\jquery\dist\jquery.min.js" />
+    <Content Include="node_modules\jquery\MIT-LICENSE.txt" />
+    <Content Include="node_modules\jquery\src\ajax.js" />
+    <Content Include="node_modules\jquery\src\ajax\jsonp.js" />
+    <Content Include="node_modules\jquery\src\ajax\load.js" />
+    <Content Include="node_modules\jquery\src\ajax\parseJSON.js" />
+    <Content Include="node_modules\jquery\src\ajax\parseXML.js" />
+    <Content Include="node_modules\jquery\src\ajax\script.js" />
+    <Content Include="node_modules\jquery\src\ajax\var\nonce.js" />
+    <Content Include="node_modules\jquery\src\ajax\var\rquery.js" />
+    <Content Include="node_modules\jquery\src\ajax\xhr.js" />
+    <Content Include="node_modules\jquery\src\attributes.js" />
+    <Content Include="node_modules\jquery\src\attributes\attr.js" />
+    <Content Include="node_modules\jquery\src\attributes\classes.js" />
+    <Content Include="node_modules\jquery\src\attributes\prop.js" />
+    <Content Include="node_modules\jquery\src\attributes\support.js" />
+    <Content Include="node_modules\jquery\src\attributes\val.js" />
+    <Content Include="node_modules\jquery\src\callbacks.js" />
+    <Content Include="node_modules\jquery\src\core.js" />
+    <Content Include="node_modules\jquery\src\core\access.js" />
+    <Content Include="node_modules\jquery\src\core\init.js" />
+    <Content Include="node_modules\jquery\src\core\parseHTML.js" />
+    <Content Include="node_modules\jquery\src\core\ready.js" />
+    <Content Include="node_modules\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="node_modules\jquery\src\css.js" />
+    <Content Include="node_modules\jquery\src\css\addGetHookIf.js" />
+    <Content Include="node_modules\jquery\src\css\curCSS.js" />
+    <Content Include="node_modules\jquery\src\css\defaultDisplay.js" />
+    <Content Include="node_modules\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="node_modules\jquery\src\css\support.js" />
+    <Content Include="node_modules\jquery\src\css\swap.js" />
+    <Content Include="node_modules\jquery\src\css\var\cssExpand.js" />
+    <Content Include="node_modules\jquery\src\css\var\getStyles.js" />
+    <Content Include="node_modules\jquery\src\css\var\isHidden.js" />
+    <Content Include="node_modules\jquery\src\css\var\rmargin.js" />
+    <Content Include="node_modules\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="node_modules\jquery\src\data.js" />
+    <Content Include="node_modules\jquery\src\data\accepts.js" />
+    <Content Include="node_modules\jquery\src\data\Data.js" />
+    <Content Include="node_modules\jquery\src\data\var\data_priv.js" />
+    <Content Include="node_modules\jquery\src\data\var\data_user.js" />
+    <Content Include="node_modules\jquery\src\deferred.js" />
+    <Content Include="node_modules\jquery\src\deprecated.js" />
+    <Content Include="node_modules\jquery\src\dimensions.js" />
+    <Content Include="node_modules\jquery\src\effects.js" />
+    <Content Include="node_modules\jquery\src\effects\animatedSelector.js" />
+    <Content Include="node_modules\jquery\src\effects\Tween.js" />
+    <Content Include="node_modules\jquery\src\event.js" />
+    <Content Include="node_modules\jquery\src\event\alias.js" />
+    <Content Include="node_modules\jquery\src\event\support.js" />
+    <Content Include="node_modules\jquery\src\exports\amd.js" />
+    <Content Include="node_modules\jquery\src\exports\global.js" />
+    <Content Include="node_modules\jquery\src\intro.js" />
+    <Content Include="node_modules\jquery\src\jquery.js" />
+    <Content Include="node_modules\jquery\src\manipulation.js" />
+    <Content Include="node_modules\jquery\src\manipulation\support.js" />
+    <Content Include="node_modules\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="node_modules\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="node_modules\jquery\src\offset.js" />
+    <Content Include="node_modules\jquery\src\outro.js" />
+    <Content Include="node_modules\jquery\src\queue.js" />
+    <Content Include="node_modules\jquery\src\queue\delay.js" />
+    <Content Include="node_modules\jquery\src\selector-native.js" />
+    <Content Include="node_modules\jquery\src\selector-sizzle.js" />
+    <Content Include="node_modules\jquery\src\selector.js" />
+    <Content Include="node_modules\jquery\src\serialize.js" />
+    <Content Include="node_modules\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="node_modules\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\data\empty.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\data\mixed_sort.html" />
+    <Content Include="node_modules\jquery\src\sizzle\test\data\testinit.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\index.html" />
+    <Content Include="node_modules\jquery\src\sizzle\test\jquery.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\unit\extending.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\unit\selector.js" />
+    <Content Include="node_modules\jquery\src\sizzle\test\unit\utilities.js" />
+    <Content Include="node_modules\jquery\src\traversing.js" />
+    <Content Include="node_modules\jquery\src\traversing\findFilter.js" />
+    <Content Include="node_modules\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="node_modules\jquery\src\var\arr.js" />
+    <Content Include="node_modules\jquery\src\var\class2type.js" />
+    <Content Include="node_modules\jquery\src\var\concat.js" />
+    <Content Include="node_modules\jquery\src\var\hasOwn.js" />
+    <Content Include="node_modules\jquery\src\var\indexOf.js" />
+    <Content Include="node_modules\jquery\src\var\pnum.js" />
+    <Content Include="node_modules\jquery\src\var\push.js" />
+    <Content Include="node_modules\jquery\src\var\rnotwhite.js" />
+    <Content Include="node_modules\jquery\src\var\slice.js" />
+    <Content Include="node_modules\jquery\src\var\strundefined.js" />
+    <Content Include="node_modules\jquery\src\var\support.js" />
+    <Content Include="node_modules\jquery\src\var\toString.js" />
+    <Content Include="node_modules\jquery\src\wrap.js" />
+    <Content Include="node_modules\mysql\index.js" />
+    <Content Include="node_modules\mysql\lib\Connection.js" />
+    <Content Include="node_modules\mysql\lib\ConnectionConfig.js" />
+    <Content Include="node_modules\mysql\lib\Pool.js" />
+    <Content Include="node_modules\mysql\lib\PoolCluster.js" />
+    <Content Include="node_modules\mysql\lib\PoolConfig.js" />
+    <Content Include="node_modules\mysql\lib\PoolConnection.js" />
+    <Content Include="node_modules\mysql\lib\protocol\Auth.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\charsets.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\client.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\errors.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\field_flags.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\server_status.js" />
+    <Content Include="node_modules\mysql\lib\protocol\constants\types.js" />
+    <Content Include="node_modules\mysql\lib\protocol\PacketHeader.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ClientAuthenticationPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ComChangeUserPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ComPingPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ComQueryPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ComQuitPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ComStatisticsPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\EmptyPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\EofPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ErrorPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\Field.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\FieldPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\HandshakeInitializationPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\index.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\LocalDataFilePacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\OkPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\OldPasswordPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\ResultSetHeaderPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\RowDataPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\SSLRequestPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\StatisticsPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\packets\UseOldPasswordPacket.js" />
+    <Content Include="node_modules\mysql\lib\protocol\PacketWriter.js" />
+    <Content Include="node_modules\mysql\lib\protocol\Parser.js" />
+    <Content Include="node_modules\mysql\lib\protocol\Protocol.js" />
+    <Content Include="node_modules\mysql\lib\protocol\ResultSet.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\ChangeUser.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Handshake.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\index.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Ping.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Query.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Quit.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Sequence.js" />
+    <Content Include="node_modules\mysql\lib\protocol\sequences\Statistics.js" />
+    <Content Include="node_modules\mysql\lib\protocol\SqlString.js" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\bignumber.js" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\bignumber.min.js" />
+    <Content Include="node_modules\mysql\node_modules\bignumber.js\doc\API.html" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\duplex.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\lib\_stream_duplex.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\lib\_stream_passthrough.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\lib\_stream_readable.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\lib\_stream_transform.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\lib\_stream_writable.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\lib\util.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\util.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\inherits\test.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\isarray\build\build.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\isarray\index.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\node_modules\string_decoder\index.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\passthrough.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\readable.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\transform.js" />
+    <Content Include="node_modules\mysql\node_modules\readable-stream\writable.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\index.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\controllers\main-Controller.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\controllers\notthis.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\controllers\other-Controller.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\filterdir\root.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\filterdir\sub\hello.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\mydir\foo.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\mydir\hello.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\mydir\sub\yes.js" />
+    <Content Include="node_modules\mysql\node_modules\require-all\test\test.js" />
+    <Content Include="node_modules\ravendb\lib\api.js" />
+    <Content Include="node_modules\ravendb\lib\database.js" />
+    <Content Include="node_modules\ravendb\lib\datastore.js" />
+    <Content Include="node_modules\ravendb\lib\document.js" />
+    <Content Include="node_modules\ravendb\lib\ravendb.js" />
+    <Content Include="node_modules\ravendb\lib\tests\database-test.js" />
+    <Content Include="node_modules\ravendb\lib\tests\datastore-test.js" />
+    <Content Include="node_modules\ravendb\lib\tests\document-test.js" />
+    <Content Include="node_modules\ravendb\lib\tests\helpers.js" />
+    <Content Include="node_modules\ravendb\lib\tests\tony.jpeg" />
+    <Content Include="node_modules\ravendb\node_modules\request\cookies.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\main.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\mimetypes.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\test.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\googledoodle.png" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\server.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-body.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-cookies.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-errors.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-pipes.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-put.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-ssl.js" />
+    <Content Include="node_modules\ravendb\node_modules\request\tests\test-timeout.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\arguments.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\choice.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\constants.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\help.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\nargs.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\parents.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\prefix_chars.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\sub_commands.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\sum.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\examples\testformatters.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\index.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\append.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\append\constant.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\count.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\help.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\store.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\store\constant.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\store\false.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\store\true.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\subparsers.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action\version.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\action_container.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\argparse.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\argument\error.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\argument\exclusive.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\argument\group.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\argument_parser.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\const.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\help\added_formatters.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\help\formatter.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\lib\namespace.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\dist\underscore.string.min.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\lib\underscore.string.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\run-qunit.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\speed.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\strings.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\strings_standalone.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test.html" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_standalone.html" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\arrays.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\chaining.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\collections.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\functions.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\index.html" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\objects.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\speed.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\utility.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\vendor\jquery.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\vendor\jslitmus.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\vendor\qunit.css" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\test_underscore\vendor\qunit.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\argparse\node_modules\underscore.string\test\underscore.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\examples\g.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\examples\usr-local.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\glob.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\fs.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\graceful-fs.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\polyfills.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\test\open.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\graceful-fs\test\readdir-sort.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\inherits\test.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\minimatch.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\lib\lru-cache.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\basic.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\foreach.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\memory-leak.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\bench.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\sigmund.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\node_modules\sigmund\test\basic.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\test\basic.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\test\brace-expand.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\test\caching.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\test\defaults.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\minimatch\test\extglob-ending-with-state-char.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\once\once.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\node_modules\once\test\once.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\00-setup.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\bash-comparison.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\cwd-test.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\empty-set.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\error-callback.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\globstar-match.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\mark.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\negation-test.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\new-glob-optional-options.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\nocase-nomagic.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\pause-resume.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\readme-issue.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\root-nomount.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\root.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\stat.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\node_modules\glob\test\zz-cleanup.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\testino.js" />
+    <Content Include="node_modules\ravendb\node_modules\testino\test\testino_test.js" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\favicon.ico" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\index.html" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\index.js" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\underscore-min.js" />
+    <Content Include="node_modules\ravendb\node_modules\underscore\underscore.js" />
+    <Content Include="node_modules\ravendb\src\tests\tony.jpeg" />
+    <Content Include="packages.config" />
+    <Content Include="CommandPropt.lnk" />
+    <None Include="packages\jQuery.2.1.1\Content\Scripts\jquery-2.1.1-vsdoc.js" />
+    <Content Include="packages\jQuery.2.1.1\Content\Scripts\jquery-2.1.1.js" />
+    <Content Include="packages\jQuery.2.1.1\Content\Scripts\jquery-2.1.1.min.js" />
+    <None Include="packages\jQuery.2.1.1\Tools\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\appcore.js" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Server.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1692</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1692/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

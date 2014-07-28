@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Example of Nodejs interaction VIA Jquery Ajax Call</title>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>    
+    <script src="Scripts/angular.min.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body style="background-color:red" data-ng-app="moduleApp129">   
+    <div style="background-color:blue" data-ng-controller="CustomerController">
+        <button data-ng-click="getData()">Get Customers</button>
+        <button data-ng-click="getDataJqueryAjax()">Get Customers JqueryAjax</button>
+        <button data-ng-click="getDataJqueryAjaxPromise()">Get Customers JqueryAjaxPromise</button>
+        <button data-ng-click="clearData()">Clear Data</button>
+        <br />
+        <ul class="customers">
+            <li ng-repeat="cust in customers">
+                <input type="text" style="width:80px" name="input1" ng-model="cust.CustomerID" />
+                <input type="text" style="width:120px" name="input2" ng-model="cust.CompanyName" />                
+                <input type="text" style="width:120px" name="input3" ng-model="cust.ContactName" /> 
+                <input type="text" style="width:80px" name="input4" ng-model="cust.ContactTitle" /> 
+                <input type="text" style="width:130px" name="input5" ng-model="cust.Address" /> 
+                <input type="text" style="width:100px" name="input6" ng-model="cust.City" /> 
+                <input type="text" style="width:80px" name="input7" ng-model="cust.Region" />
+                <input type="text" style="width:80px" name="input8" ng-model="cust.PostalCode" />
+                <input type="text" style="width:80px" name="input9" ng-model="cust.Country" />
+                <input type="text" style="width:80px" name="input10" ng-model="cust.Phone" />
+                <input type="text" style="width:80px" name="input11" ng-model="cust.Fax" />
+            </li>
+        </ul>
+    </div>
+    <script src="Scripts/appcore.js"></script>
+</body>
+</html>
+
+
+
+
+
